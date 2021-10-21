@@ -7,13 +7,13 @@ import requests
 from decouple import config
 from telethon import Button, TelegramClient, events
 
-
+BOT_TOKEN = '2064536076:AAHdciaJTq3DH2XclNyWBqLgb8pFCF630E8'
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.INFO
 )
 
 bot = TelegramClient(None, api_id=6, api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e").start(
-    bot_token=config("BOT_TOKEN")
+    bot_token=("BOT_TOKEN")
 )
 
 logging.info("Starting bot...")
